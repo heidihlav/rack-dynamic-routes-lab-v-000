@@ -6,10 +6,10 @@ class Application
 
     if req.path == "/testing"
       resp.write "Testing"
-    else 
+    else
       resp.write "Route not found"
       resp.status = 404
-    end 
+    end
     resp.finish
     # if req.path.match (/testing/)
     #   @@items.each do |item|
