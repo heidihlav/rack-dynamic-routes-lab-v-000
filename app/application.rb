@@ -8,10 +8,11 @@ class Application
 
     #if
     req.path.match(/items/)
-      binding.pry
       @@items.each do |item|
         item
         resp.write "#{item.price}\n"
+        binding.pry
+
       end
     # else
       resp.write "Item not found"
