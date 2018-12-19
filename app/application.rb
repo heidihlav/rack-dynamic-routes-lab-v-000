@@ -6,7 +6,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    #if 
+    #if
     req.path.match(/items/)
       binding.pry
       @@items.each do |item|
@@ -16,7 +16,7 @@ class Application
       resp.write "Item not found"
       resp.status = 400
     # end
-    # 
+    #
     # else
     #   resp.write "Route not found"
     #   resp.status = 404
