@@ -8,8 +8,7 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-      if @@items.each do |item|
-        name = @@items.find{|i| i.name == item_name}
+      if name = @@items.find{|i| i.name == item_name}
         resp.write item.price
         # binding.pry
       end
