@@ -5,10 +5,9 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    req.path.match(/items/)
+    if req.path.match(/items/)
       binding.pry
-
-      if @@items.each do |item|
+      @@items.each do |item|
         # item ==
         resp.write "#{item.price}\n"
     else
