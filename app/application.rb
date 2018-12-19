@@ -14,12 +14,12 @@ class Application
       resp.status = 400
     end
 
-        if req.path == "/testing"
-          resp.write "Testing"
-        else
-          resp.write "Route not found"
-          resp.status = 404
-        end
+    # if req.path == "/testing"
+    #   resp.write "Testing"
+    # else
+    #   resp.write "Route not found"
+    #   resp.status = 404
+    # end
 
     resp.finish
   end
