@@ -15,7 +15,9 @@ class Application
       @@items.each do |item|
         resp.write "#{item}\n"
     end
-  elseif
+    else
+      resp.write "Item not found"
+      resp.status = 400
 
     resp.finish
     # if req.path.match (/testing/)
