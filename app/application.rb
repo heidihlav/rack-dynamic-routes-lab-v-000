@@ -10,8 +10,7 @@ class Application
       @@items.each do |item|
         item
         resp.write "#{item.price}\n"
-        binding.pry
-
+        # binding.pry
       end
     else
       resp.write "Item not found"
