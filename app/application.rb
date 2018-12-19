@@ -13,9 +13,6 @@ class Application
       resp.status = 400
     end
 
-    # if req.path == "/testing"
-    #   resp.write "Testing"
-
     # this is ok else
     #   resp.write "Route not found"
     #   resp.status = 404
