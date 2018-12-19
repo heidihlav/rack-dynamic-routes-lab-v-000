@@ -7,7 +7,7 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      @@items.each do |item|
+      if @@items.each do |item|
         item
         resp.write "#{item.price}\n"
         # binding.pry
