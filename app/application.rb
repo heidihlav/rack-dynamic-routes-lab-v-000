@@ -6,8 +6,8 @@ class Application
 
     # if req.path.match (/testing/)
     #   @@items.each do |item|
-    #     resp.write 
-    # 
+    #     resp.write
+    #
   end
 
 end
