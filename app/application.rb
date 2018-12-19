@@ -18,7 +18,7 @@ class Application
     else
       resp.write "Item not found"
       resp.status = 400
-
+    end
     resp.finish
     # if req.path.match (/testing/)
     #   @@items.each do |item|
