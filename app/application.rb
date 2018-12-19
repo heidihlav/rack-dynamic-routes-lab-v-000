@@ -8,7 +8,7 @@ class Application
 
     #if
     req.path.match(/items/)
-      @@items.each do |item|
+      @@items.each do |item.name|
         item
         resp.write "#{item.price}\n"
         binding.pry
